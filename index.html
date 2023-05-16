@@ -23,8 +23,8 @@
         <button @click="getRandomMail()">Genera mail</button>
 
         <ul>
-            <li v-for="mail in 10">
-                {{ mailList }}
+            <li v-for="mail in mailList" :key="index">
+                {{ mail }}
             </li>
         </ul>
 
